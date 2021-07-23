@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uhost</title>
+    <link rel="stylesheet" type="text/css" href="first.css" media="screen"/>    
+
+</head>
+<body>
+    <!-- making the very first header using normal/basic css-->
+    <header class="main-header"> <!--we can style the header in the external css using element selector as header{ any css prop} but this is not a good practice as we could have many header in one big site for each pages then the styling done to it can affect all the headers with the same property. there for we use main-header class so that css applied to it will be clear that this style is for only the header of main-header class-->
+        <div class="main-div"> 
+            <a href="index.html">uhost</a>       <!--we make logo in a separate div-->
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item" >
+                    <a href="index.html"> packages</a> <!--note if href is not added then the packages will not appear as a link.-->
+                </li>
+                <li class="main-nav__item">
+                    <a href="index.html" >customers</a>
+                </li>
+                <li class="main-nav__item--cta"> <!--this is bem way of naming classess ,cta stands for call to action ,we used cta after main-nav__item bcs this tag has to be different state or stayling-->
+                    <a href="index.html">start Hosting</a> <!--code for making button good use: 
+                        .main-nav__cta a {
+                            color:#ff1b68; 
+                            background:white;
+                            padding: 8px 16px;
+                            border-radius: 8px; 
+                        }
+                        .main-nav__item--cta a:hover,
+                        .main-nav__item--cta a:active,{
+                            color:#ff1b68;
+                            background:white;
+                            border: none;
+                        }
+                    
+                    -->
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    
+</body>
+</html>
